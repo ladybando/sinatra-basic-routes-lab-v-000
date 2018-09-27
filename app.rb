@@ -2,7 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/' do
-    halt, 200
+    response.status = 200
   end
   
   get '/raise200' do
