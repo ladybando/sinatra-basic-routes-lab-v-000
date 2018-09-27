@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
   get '/name' do
     "My name is #{name}"
-    redirect 200
+    last_response.status = 200
   end
 
   get '/hometown' do
