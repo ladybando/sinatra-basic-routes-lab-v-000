@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
   get '/name' do
     "My name is #{name}"
-    last_response.status = 200
+    Thin::HTTP_STATUS_CODES[453]
   end
 
   get '/hometown' do
