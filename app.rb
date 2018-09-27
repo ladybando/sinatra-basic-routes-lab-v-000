@@ -4,11 +4,7 @@ class App < Sinatra::Base
   get '/' do
     response.status = 200
   end
-  
-  get '/raise200' do
-    status 200
-  end
-  
+
   get '/name' do
     "My name is #{name}"
     redirect 200
