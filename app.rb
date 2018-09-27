@@ -10,13 +10,13 @@ class App < Sinatra::Base
   end
   
   get '/name' do
-  "My name is #{name}"
-  redirect 200
-end
+    "My name is #{name}"
+    redirect 200
+  end
 
   get '/hometown'
-  "My hometown is #{hometown}"
-  redirect 200
-end
+    "My hometown is #{hometown}"
+    redirect 200
+  end
 
 end
