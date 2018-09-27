@@ -18,5 +18,10 @@ class App < Sinatra::Base
     "My hometown is #{hometown}"
     redirect 200
   end
+  
+    get '/name' do
+      "My name is #{name}"
+      redirect 200
+    end
 
 end
