@@ -1,9 +1,6 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  get '/' do
-    last_response.status = 200
-  end
 
   get '/name' do
     "My name is #{name}"
