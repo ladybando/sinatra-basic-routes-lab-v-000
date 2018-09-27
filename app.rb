@@ -5,7 +5,7 @@ class App < Sinatra::Base
     "Hello, World!"
   end
   
-  get '/
+  get '/raise200
   
   
   get '/name' do
