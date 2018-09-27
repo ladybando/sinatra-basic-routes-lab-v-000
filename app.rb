@@ -19,8 +19,8 @@ class App < Sinatra::Base
     redirect 200
   end
   
-    get '/song' do
-      "My favorite song is #{song}"
+    get '/favorite-song' do
+      "My favorite song is #{favorite-song}"
       redirect 200
     end
 
