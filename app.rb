@@ -11,6 +11,6 @@ class App < Sinatra::Base
   
   get '/name' do
   "My name is #{name}"
-  status 200
+  redirect 200
 end
 end
